@@ -8,9 +8,45 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <h1>This is another header</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb">
+            <a class="navbar-brand" href="index.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Option 1<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Option 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Option 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="header">
+            <h1 id="headerText">ReListify</h1>
+        </div>
+
+        <div id="mainDiv">
+            <div id="mainContainer" class="container bg-dark text-white rounded">
+                <h1>Welcome to ReListify</h1>
+                <p>The goal of this project is to use the Spotify for Developers API
+                    to allow a user to divide their liked (saved) Spotify songs into playlists
+                    based on their genres.
+
+                    We'll start with the "Go" button below just to try to log a user into Spotify.
+                </p>
+                <button onclick="doSomething()" id="mainButton" class="btn btn-primary">Go!</button>
+            </div>
+        </div>
     </body>
 </html>
